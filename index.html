@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I go?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="node_modules/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>How I go?</h1>
+    </header>
+
+    <div class="container">
+        <label for="city-input">Cidade</label>
+        <input type="text" id="city-input">
+        
+        <div class="date">
+            <label for="start-date-input">De</label>
+            <input type="date" id="start-date-input">
+
+            <label for="end-date-input">Até</label>
+            <input type="date" id="end-date-input">
+        </div>  
+
+        <button id="btn">Confirmar</button>
+
+    </div>
+
+    <script type="module">
+        import { App } from './src/App.js';
+
+        App.start();
+    </script>
+    <script src="src/index.js"></script>
+</body>
+</html>
